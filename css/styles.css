@@ -1,0 +1,483 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+	
+   Helpful links: 
+   	Web colors: 
+   		https://en.wikipedia.org/wiki/Web_colors#X11_color_names
+	Color picker tool:
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+		http://colorpicker.com
+
+*/
+
+body{
+   background-color: #FFFFFF;
+   /*background-image: url('../img/Cappadocia.jpg');*/
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+a {
+   text-decoration: none !important;
+}
+
+a:hover{
+   color:#286DC0;
+}
+
+.background{
+   position:fixed;
+   top:0;
+   left:0;
+   z-index:-3;
+   height: 100vh;
+   width:100%;
+}
+
+.background img {
+   width:100%;
+   height: 100%;
+   display:block;
+   object-fit: cover;
+}
+
+.enter {
+   border: 2px solid black;
+   position: absolute;
+   top:20%;
+   left:50%;
+   transform: translate(-50%, 0%);
+}
+
+.topbox1{
+   border:2px #286DC0;
+   border-style: none none solid none;
+   width:100%;
+   margin:0px;
+   display: flex;
+   align-items: center;
+   padding: 0;
+}
+
+.topbox2{
+   width:90%;
+   margin:auto;
+   overflow: hidden;
+   display: flex;
+   flex-wrap:wrap;
+   align-items: center;
+   padding: 0;
+}
+
+.namebox{
+   flex: 2.5;
+   margin-right:30px;
+}
+
+
+.menuitems {
+   flex: 8;
+   display: flex;
+}
+
+.menuitems .icon {
+  display: none;
+}
+
+.clickbox{
+   flex: 1.6;
+   margin: 0;
+}
+
+.namebox h1{
+   margin: 0;
+   padding: 0;
+   line-height: 1.1;
+}
+
+.namebox a{
+   color:#00356B;
+   font-family: "Roboto", sans-serif;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.clickbox h3{
+   margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+.clickbox a{
+   color:#286DC0;
+   font-family: "Roboto", sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.middlebox1 {
+  width: 80%;
+  margin: auto;
+  padding-top:20px;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+}
+
+.leftbox {
+  width: 70%;
+  height: 100%;
+  padding: 10px;
+}
+
+.infobox {
+  font-size: 16px;
+}
+
+.rightbox {
+  width: 30%;
+  height: 100%;
+  padding: 10px; /* match .leftbox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap:0;
+}
+
+.photobox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.photobox img {
+  width: 250px;
+  height:auto;
+  max-height:300px;
+  object-fit: cover;
+  object-position: top;
+  margin:0,;
+  padding:0;
+  display: block;
+}
+
+.contactbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.middlebox1 h2{
+   font-size: 20px;
+   color: #00356B;
+}
+
+.middlebox2{
+   width: 55%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-left: calc((100% - 80%) / 2);
+   background-color: white;
+   text-align:left;
+}
+
+.middlebox2 h2{
+   font-size: 20px;
+   color: #00356B;
+}
+
+.flexrow {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+
+.sectionlabel {
+  width: 180px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a355e; /* deep blue, like your screenshot */
+  line-height: 1.2;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.sectionlist {
+  flex: 1;
+  margin: 0;
+  padding-left: 20px;
+  list-style: disc;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.middlebox3 {
+   width: 80%;
+   margin: auto;
+   font-size: 2vw;
+}
+
+
+.middlebox3 .top4 {
+   display:flex;
+   justify-content: center;
+   padding:10px;
+}
+
+
+.thumb1 {
+   background-color: white;
+   flex: 1;
+   width: 100%;
+   overflow: hidden;
+   margin: 5px;
+   position: relative;
+   border:1px solid #286DC0;
+}
+
+.thumb1 p{
+   text-align:center;
+   font-size: .75em;
+   position:absolute;
+   width: 100%;
+   left: 0px;
+   bottom: 0px;
+   z-index: 2;
+}
+
+.thumb1 a{
+   color: white;
+   text-decoration: none !important;
+   border:1px solid #ffffff;
+   background-color: #00356B;
+}
+
+.thumb1 a:hover{
+   color:#286DC0;
+}
+
+.thumb1 img{
+   display:block;
+   width: 300px;
+   height: 337px;
+   object-fit: cover;
+   margin-left: auto;
+   margin-right: auto;
+   opacity: .5;
+}
+
+
+.bottombox{
+   padding:20px;
+   height: 50px;
+   width:100%;
+   border:2px #286DC0;
+   border-style: solid none none none;
+   overflow:hidden;
+   display: flex;
+   justify-content: center;
+}
+
+
+.social img {
+   width: 100%;
+}
+
+
+
+/* STYLING FOR RESEARCH PAGE */
+
+.row{
+   margin:auto;
+   margin-bottom: 10px;
+   width:75%;
+   background-color: white;
+   overflow: hidden;
+   display: flex;
+   flex-wrap: wrap;
+   padding:10px;
+}
+
+.row .column1{
+   flex: 1;
+   margin-left: 20px;
+   margin:auto;
+}
+
+.row .column1 img{
+   display:block;
+   width:100%;
+}
+
+.row .column2{
+   flex: 1.75;
+   margin-left: 20px;
+}
+
+.row .column2 h3{
+   font-size: 20px;
+}
+
+.row .column2 a{
+   font-style: italic;
+}
+
+.row .column2 p{
+   font-size: 14px;
+}
+
+.publist {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.publist li {
+  margin-bottom: 1em;
+}
+
+/* Other Pages */
+.bigboy {
+   margin:auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width:80%;
+   overflow: hidden;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.bigboy h2 {
+  font-size: 18px;
+  text-align: left;
+  color: #000000;
+  background-color: white;
+  margin-bottom: 0.3em; /* reduce space below the headline */
+}
+
+.bigboy ul {
+  margin-top: 0;       /* remove default spacing above the list */
+  padding-left: 1.2em;  /* or adjust as needed for bullet indentation */
+}
+
+.bigboy ul li {
+  margin-bottom: 0.3em; /* tighter spacing between bullets */
+}
+
+.thumbcontainer {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping for responsiveness */
+  justify-content: center;
+  gap: 10px; /* consistent spacing between items */
+}
+
+.thumb {
+  width: 200px;           /* fixed width */
+  height: 250px;          /* fixed height */
+  border: 2px solid #286DC0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 200px;          /* adjust as needed */
+  object-fit: cover;      /* crop excess, keeps proportions */
+  display: block;
+}
+
+.thumb p {
+  text-align: center;
+  color: black;
+  margin: 5px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.thumb p:hover {
+   color:red;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+   .middlebox2 .top4{
+      display: block;
+      width: 100%;
+   }
+
+
+   .menuitems :not(:first-child), {display: none};
+   .menuitems .icon {
+      float: right;
+      display: block;
+   }
+
+}
+
+
+@media screen and (max-width: 800px) {
+   .menuitems.responsive {position: relative;}
+   .menuitems.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+   .menuitems.responsive {
+      float: none;
+      display: block;
+      text-align: left;
+   }
+
+}
+
+@media only screen and (max-width: 640px) {
+   .topbox2 {
+      display: block;
+   }
+
+   .middlebox1 {
+      display: block;
+   }
+
+   .top4 {
+      display: block;
+   }
+
+
+   .row {
+      display: block;
+   }
+
+   .gallery{
+      display: block;
+   }
+}
+
+
+
+
+
+
+
+
+
+
