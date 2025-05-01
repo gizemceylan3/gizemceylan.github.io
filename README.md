@@ -1,1 +1,1 @@
-# gizemceylan3.github.io
+# gizemceylan.github.io
